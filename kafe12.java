@@ -6,9 +6,12 @@ public class kafe12 {
     boolean keanggotaan;
     int jmlKopi, jmlTeh, jmlRoti;
     double hargaKopi = 12000.0, hargaTeh = 7000.0, hargaRoti = 20000.0;
-    float diskon = 10 / 100f;
-
-    System.out.print("Masukkan keanggotaan (true/false):");
+    int nominalInt;
+    byte totalByte;
+    float diskon = 10 / 100;
+   
+    //Masukkan keanggotaan (true/false):
+    System.out.print("");
     keanggotaan = input.nextBoolean();
     System.out.print("Maskkan jumlah pembelian kopi:");
     jmlKopi = input.nextInt();
@@ -18,12 +21,18 @@ public class kafe12 {
     jmlRoti = input.nextInt();
 
     double totalHarga = (jmlKopi*hargaKopi) + (jmlTeh*hargaTeh) + (jmlRoti*hargaRoti);
-    double nominalBayar = totalHarga - (diskon2 * totalHarga);
+    totalByte = (byte)totalHarga;
+    double nominalBayar =  totalHarga - (diskon * totalHarga);
+    nominalInt = (int)nominalBayar;
+     
 
     //output
     System.out.println(" keanggotaan pelanggan " + keanggotaan);
-    System.out.println(" item pembelian  "  + jmlKopi + " kopi, "  + jmlTeh + " teh, " + jmlRoti + " roti");
-    System.out.println(" nominal bayar rp " + nominalBayar);
+    System.out.println(" item pembelian:  "  + jmlKopi + " kopi, "  + jmlTeh + " teh, " + jmlRoti + " roti");
+    System.out.println(" total harga: " + totalHarga );
+    System.out.println(" ini adalah hasil casting total byte: " + totalByte );
+    System.out.println(" nominal bayar: RP." + nominalBayar);
+    System.out.println(" ini adalah hasil casting total byte: " + nominalInt );
 
 
   }
