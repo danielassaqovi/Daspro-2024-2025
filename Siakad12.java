@@ -10,7 +10,7 @@ public class Siakad12 {
     double nilaiKuis, nilaiTugas, nilaiUts, nilaiAkhir, uas;
     
     
-
+    //inpit
     System.out.print("Masukkan nama :");
     nama = sc.nextLine();
     System.out.print("Masukkan nim :");
@@ -20,7 +20,6 @@ public class Siakad12 {
     //.charAt(0);
     System.out.print("Masukkan absen :");
     absen = sc.nextByte();
-
     System.out.print("Masukkan nilai kuis :");
     nilaiKuis = sc.nextDouble();
     System.out.print("Masukkan nilai tugas :");
@@ -29,22 +28,18 @@ public class Siakad12 {
     nilaiUts = sc.nextDouble();
     System.out.print("Masukkan nilai UAS :");
     uas = sc.nextDouble();  
-  
-    nilaiAkhir = (nilaiKuis*20/100) + (nilaiTugas*15/100) + (nilaiUts*30/100) + (uas*35/100);
-   // if (nilaiAkhir < 80);
-   // System.err.println("tidak lululs");
     
+    //perhitungan
+    nilaiAkhir = (nilaiKuis*20/100) + (nilaiTugas*15/100) + (nilaiUts*30/100) + (uas*35/100);
+  
+    //output
     System.out.println("nama:" + nama);
     System.out.println ("NIM: " + nim);
     System.out.println("kelas:" + kelas);
     System.out.println("absen:" + absen);
     System.out.println("nilai akhir:" + nilaiAkhir );
-    System.out.println("===hasi===");
-        if (nilaiAkhir < 75) {
-       System.out.println("tidak lulus"); 
-    } else 
-       System.out.println("lulus"); {
-    }
+    
+
    
         
 

@@ -8,6 +8,7 @@ public class pemilihanBilangan12{
       System.out.print("Masukkan sebuah angka: ");
       int angka = input.nextInt();
 
+      //percabangan if else
       if (angka % 2 == 0)
       {
         System.out.println("Angka" + angka + " termasuk bilangan genap");
