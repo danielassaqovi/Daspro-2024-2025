@@ -9,13 +9,16 @@ public class pemilihanBilangan12{
       int angka = input.nextInt();
 
       //percabangan if else
-      if (angka % 2 == 0)
-      {
-        System.out.println("Angka" + angka + " termasuk bilangan genap");
-      }
-      else
-      {
-        System.out.println("Angka" + angka + " termasuk bilangan ganjil");
-      }
-  }
+  //     if (angka % 2 == 0)
+  //     {
+  //       System.out.println("Angka" + angka + " termasuk bilangan genap");
+  //     }
+  //     else
+  //     {
+  //       System.out.println("Angka" + angka + " termasuk bilangan ganjil");
+  //     }
+      //operator tenary
+      String hasil = (angka % 2 == 0) ? angka + " termasuk bilangan genap" : angka + " termasuk bilangan ganjil";
+      System.out.println(hasil);
+     }
 }
