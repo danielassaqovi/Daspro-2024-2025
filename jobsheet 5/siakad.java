@@ -12,9 +12,9 @@ public class siakad {
     String nilaiHuruf = "";
     String kualifikasi = "";
     
-    System.out.println(" ==================");
+    System.out.println("-==================-");
     System.out.println("======SIAKAD========");
-    System.out.println(" ==================");
+    System.out.println("-==================-");
     
     //input
     System.out.print("Masukkan nama\t\t :");
@@ -82,14 +82,13 @@ public class siakad {
     }
 
     //output
-    System.out.println("nama:" + nama);
-    System.out.println ("NIM: " + nim);
-    System.out.println("kelas:" + kelas);
-    System.out.println("absen:" + absen);
-    System.out.println("nilai akhir:" + nilaiAkhir );
-    System.out.println("nilai huruf:" + nilaiHuruf );
-    System.out.println("nilai setara:" + nilaiSetara );
-    System.out.println("kualifikasi:" + kualifikasi );
+    System.out.println("nama\t\t:" + nama +  "\tNIM\t\t: " + nim);
+    System.out.println("kelas\t\t:" + kelas +  "\tabsen\t\t:" + absen);
+    System.out.println();
+    System.out.println("nilai akhir\t\t:" + nilaiAkhir );
+    System.out.println("nilai huruf\t\t:" + nilaiHuruf );
+    System.out.println("nilai setara\t\t:" + nilaiSetara );
+    System.out.println("kualifikasi\t\t:" + kualifikasi );
     
 
    
